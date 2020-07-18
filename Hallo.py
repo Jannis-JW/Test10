@@ -28,12 +28,32 @@ while x > 1:
         y+= 1
 print(y)
 """
-"""
+
 ## Euler 3 incomplete
-x = 1
-y = 1
-print(x)
-"""
+def isPal(num):
+    numString = str(num)
+    for i in range(0,len(numString) // 2+1):
+        if (numString[i] != numString[-i - 1]):
+            return False
+    return True
+
+
+max = 0
+
+max1, max2 = 0, 0
+
+for i in range(999, 99, -1):
+    for j in range(999, 99, -1):
+        pro = i * j
+        if isPal(pro):
+            if (pro > max):
+                max = pro
+                max1, max2 = i, j
+
+
+print(str(max))
+print(str(max) + ' = ' + str(max1) + ' * ' + str(max2))
+
 """
 ## Euler 4
 x = 1
