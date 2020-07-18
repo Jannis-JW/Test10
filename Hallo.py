@@ -60,13 +60,27 @@ y = y**2
 summe = y - summe
 print(summe)
 """
-"""
-##Euler 6 incomplete
-x = 1
-y = 2
 
-while x<10002:
-"""
+##Euler 6
+import math
+
+def isPrime(num):
+    for i in range(2, int(math.sqrt(num)) +1):
+        if (num % i == 0):
+            return False
+
+    return True
+
+count= 1
+num = 2
+
+while (count<10001):
+    num += 1
+    if isPrime(num):
+        count +=1
+
+print(str(num))
+
 """
 ##Euler 7
 for i in range (1,1000):
