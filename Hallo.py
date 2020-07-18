@@ -28,8 +28,8 @@ while x > 1:
         y+= 1
 print(y)
 """
-
-## Euler 3 incomplete
+"""
+## Euler 3
 def isPal(num):
     numString = str(num)
     for i in range(0,len(numString) // 2+1):
@@ -53,7 +53,7 @@ for i in range(999, 99, -1):
 
 print(str(max))
 print(str(max) + ' = ' + str(max1) + ' * ' + str(max2))
-
+"""
 """
 ## Euler 4
 x = 1
@@ -80,7 +80,7 @@ y = y**2
 summe = y - summe
 print(summe)
 """
-
+"""
 ##Euler 6
 import math
 
@@ -100,7 +100,7 @@ while (count<10001):
         count +=1
 
 print(str(num))
-
+"""
 """
 ##Euler 7
 for i in range (1,1000):
